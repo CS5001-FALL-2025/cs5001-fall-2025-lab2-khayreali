@@ -118,7 +118,7 @@ num_float = 1.0
 num_str = "1.0"
 num_bool = True
 
-print("Integer:" + num + "Float:" + num_float + "String:" + num_str + "Bool:" + num_bool)
+print("Integer:" + str(num) + "Float:" + str(num_float) + "String:" + num_str + "Bool:" + str(num_bool))
 
 
 # Variable Naming Conventions
@@ -277,7 +277,7 @@ print(f"Tip (18%): ${tip_amount:.2f}")
 total = subtotal + tax_amount + tip_amount
 print(f"Total: ${total:.2f}")
 
-# Using f-strings for a nice receipt
+# Using f-strings for a nice receiptƒ
 print("\n--- RECEIPT ---")
 print(f"Appetizer:    ${appetizer:>6.2f}")
 print(f"Main Course:  ${main_course:>6.2f}")
@@ -398,7 +398,7 @@ print(f"Object falls {distance:.1f} meters in {time} seconds")
 
 radius = 7
 height = 7
-cylinder_volume = 7 * PI * 7
+cylinder_volume = PI * (radius**2) * height
 
 
 # Comments and Documentation
@@ -429,7 +429,7 @@ print(f"Total cost: ${total:.2f}")
 # Challenge: Write a well-commented program that converts temperature.
 
 def convert_celsius_to_fahrenheit(celsius_temp):
-    fahrenheit = (celsius_temp*2)+20 # Easy celsius conversion is to double the celsius temp and add twenty.
+    fahrenheit = (celsius_temp*9/5)+32 # To convert celsius to fahrenheit we use the formula F = (C × 9/5) + 32
     return fahrenheit
 
 

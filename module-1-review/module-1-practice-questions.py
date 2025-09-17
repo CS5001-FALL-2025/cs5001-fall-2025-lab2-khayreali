@@ -199,10 +199,11 @@ print("- Calculate the tip amount and total bill")
 print("- Print both values with descriptive messages")
 print("Expected: Tip: $8.19, Total: $53.69")
 
-def calculate_tip(amount, tip_percentage):
-    tip_amount = amount * tip_percentage
-    total_bill = amount + tip_amount
-    print(f"Expected: Tip: ${tip_amount:.2f}, Total: ${total_bill:.2f}")
+amount = 20
+tip_percentage = .18
+tip_amount = amount * tip_percentage
+total_bill = amount + tip_amount
+print(f"Expected: Tip: ${tip_amount:.2f}, Total: ${total_bill:.2f}")
 
 print("=" * 30)
 
@@ -232,7 +233,20 @@ print("- Calculate subtotal, tax (8.5%), and total")
 print("- Print a formatted receipt")
 print()
 
-# Write your code here:
+apples = 3.99
+bread = 2.50
+milk = 4.25
+tax = .085
+subtotal = apples + bread + milk
+print("\n--- RECEIPT ---")
+print(f"Apples:    ${apples:>6.2f}")
+print(f"Bread:  ${bread:>6.2f}")
+print(f"Milk:      ${milk:>6.2f}")
+print("-" * 20)
+print(f"Subtotal:     ${subtotal:>6.2f}")
+print(f"Tax:          ${subtotal*tax:>6.2f}")
+print("-" * 20)
+print(f"TOTAL:        ${subtotal+(subtotal*tax):>6.2f}")
 
 
 
@@ -250,12 +264,10 @@ print("Convert 75 degrees Fahrenheit to Celsius using the formula:")
 print("Celsius = (Fahrenheit - 32) * 5/9")
 print("Print the result with a descriptive message.")
 print("Expected: 75°F is equal to 23.89°C")
-print()
 
-# Write your code here:
-
-
-
+fahr = 75
+celsius = (fahr - 32) * 5/9 
+print(f"Expected: {fahr}°F is equal to {celsius}°C")
 
 print("=" * 30)
 
@@ -266,12 +278,11 @@ print("You have 3847 seconds. Convert this to hours, minutes, and seconds.")
 print("Print the result in the format: 'X hours, Y minutes, Z seconds'")
 print("Hint: Use integer division (//) and modulus (%) operators")
 print("Expected: 1 hours, 4 minutes, 7 seconds")
-print()
 
-# Write your code here:
-
-
-
+hours = 3847 // 3600
+minutes = (3847 % 3600) // 60
+seconds = ((3847 % 3600) % 60)
+print(f"Expected {hours} hour(s), {minutes} minute(s), {seconds} second(s)")
 
 print("=" * 30)
 
@@ -283,8 +294,13 @@ print("Use them to create a funny story and print it.")
 print("Be creative with your story structure!")
 print()
 
-# Write your code here:
+adjective = "silly"
+noun = "cat"
+verb = "sleeping"
+place = "Time Square"
+number = "3"
 
+print(f"Once upon a time, there was a {adjective} {noun} who loved {verb} in {place}. One day, it did this {number} times and then died.")
 
 
 
