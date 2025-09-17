@@ -30,7 +30,9 @@ print("Print both variables.")
 print("Expected output: 25, Boston")
 print()
 
-# Write your code here:
+age = 25
+city = "Boston"
+print(f"{age}, {city}")
 
 
 
@@ -43,10 +45,13 @@ print("Create three variables: 'first_name', 'last_name', and 'student_id'.")
 print("Assign them appropriate values and print each one on a separate line.")
 print()
 
-# Write your code here:
+first_name = "Khayre"
+last_name = "Ali"
+student_id = "4132432412"
 
-
-
+print(first_name)
+print(last_name)
+print(student_id)
 
 print("=" * 30)
 
@@ -57,10 +62,9 @@ print("Then reassign it to 68 and print the new value.")
 print("Expected output: 68")
 print()
 
-# Write your code here:
-
-
-
+temperature = 72
+temperature = 68
+print(temperature)
 
 # =============================================================================
 # SECTION 2: ARITHMETIC OPERATIONS
@@ -77,12 +81,8 @@ print("- Their product")
 print("- Their quotient (15 / 4)")
 print("- The remainder when 15 is divided by 4")
 print("Expected output: 19, 11, 60, 3.75, 3")
-print()
 
-# Write your code here:
-
-
-
+print(f"{15+4}, {15-4}, {15*4}, {15/4}, {15%4}")
 
 print("=" * 30)
 
@@ -93,10 +93,8 @@ print("Store the result in a variable called 'area' and print it.")
 print("Expected output: 96")
 print()
 
-# Write your code here:
-
-
-
+area = 12*8
+print(area)
 
 print("=" * 30)
 
@@ -105,12 +103,8 @@ print("Question 2.3:")
 print("You have $50. You buy 3 items that cost $12.99 each.")
 print("Calculate how much money you have left.")
 print("Expected output: 11.03")
-print()
 
-# Write your code here:
-
-
-
+print(50 - (3*12.99))
 
 print("=" * 30)
 
@@ -119,12 +113,9 @@ print("Question 2.4:")
 print("Calculate the average of these five test scores: 85, 92, 78, 96, 89")
 print("Store the result in a variable called 'average' and print it.")
 print("Expected output: 88.0")
-print()
 
-# Write your code here:
-
-
-
+average = (85+92+78+96+89) / 5
+print(average)
 
 # =============================================================================
 # SECTION 3: STRING CONCATENATION
@@ -137,12 +128,11 @@ print("Question 3.1:")
 print("Create variables for your first name, middle initial, and last name.")
 print("Concatenate them to create your full name and print it.")
 print("Example output: John Q. Smith")
-print()
 
-# Write your code here:
-
-
-
+first_name = "Khayre"
+middle_initial = "A."
+last_name = "Ali"
+print(f"{first_name} {middle_initial} {last_name}")
 
 print("=" * 30)
 
@@ -153,10 +143,9 @@ print("Use variables: name = 'Sarah' and age = 20")
 print("Expected output: Hello Sarah, you are 20 years old!")
 print()
 
-# Write your code here:
-
-
-
+name = "Sarah"
+age = 20
+print(f"Hello {name}, you are {age} years old!")
 
 print("=" * 30)
 
@@ -167,10 +156,10 @@ print("Print a message in the format: 'The book [title] was written by [author].
 print("Example: 'The book To Kill a Mockingbird was written by Harper Lee.'")
 print()
 
-# Write your code here:
+book_title = "Harry Potter"
+author = "JK Rowling"
 
-
-
+print(f"The book {book_title} was written by {author}.")
 
 # =============================================================================
 # SECTION 4: COMBINING CONCEPTS
@@ -185,12 +174,19 @@ print("- Create two number variables: num1 = 24, num2 = 6")
 print("- Calculate all four basic operations")
 print("- Print each result with a descriptive message")
 print("Example: '24 + 6 = 30'")
-print()
 
-# Write your code here:
+num1 = 24
+num2 = 6
 
+num_sum = num1 + num2
+difference = num1 - num2
+quotient = num1 / num2
+product = num1 * num2
 
-
+print(f"{num1} + {num2} = {num_sum}")
+print(f"{num1} - {num2} = {difference}")
+print(f"{num1} / {num2} = {quotient}")
+print(f"{num1} * {num2} = {product}")
 
 print("=" * 30)
 
@@ -202,12 +198,11 @@ print("- Tip percentage: 18%")
 print("- Calculate the tip amount and total bill")
 print("- Print both values with descriptive messages")
 print("Expected: Tip: $8.19, Total: $53.69")
-print()
 
-# Write your code here:
-
-
-
+def calculate_tip(amount, tip_percentage):
+    tip_amount = amount * tip_percentage
+    total_bill = amount + tip_amount
+    print(f"Expected: Tip: ${tip_amount:.2f}, Total: ${total_bill:.2f}")
 
 print("=" * 30)
 
@@ -219,12 +214,11 @@ print("- Three test scores: 87, 92, 85")
 print("- Calculate the average")
 print("- Print a report showing the name, all scores, and average")
 print("Format: 'Student: Alex Johnson | Scores: 87, 92, 85 | Average: 88.0'")
-print()
 
-# Write your code here:
-
-
-
+student_name = "Alex Johnson"
+scores = [87, 92, 85]
+average = sum(scores) / len(scores)
+print(f"Student: {student_name} | Scores: 87, 92, 85 | Average: {average} ")
 
 print("=" * 30)
 
