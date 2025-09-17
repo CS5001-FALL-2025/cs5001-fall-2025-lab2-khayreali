@@ -292,7 +292,24 @@ print(f"TOTAL:        ${total:>6.2f}")
 
 # Challenge: Create a shopping receipt for 4 items with tax and discount.
 
+apples = .15
+bananas = 1.5
+oranges = 3
+subtotal = apples+bananas+oranges
+tax_amount = subtotal * tax_rate
+tip_amount = subtotal * tip_rate
+total = subtotal + tax_amount + tip_amount
 
+print("\n--- RECEIPT ---")
+print(f"Apples:    ${apples:>6.2f}")
+print(f"Bananas:  ${bananas:>6.2f}")
+print(f"Oranges:      ${oranges:>6.2f}")
+print("-" * 20)
+print(f"Subtotal:     ${subtotal:>6.2f}")
+print(f"Tax:          ${tax_amount:>6.2f}")
+print(f"Tip:          ${tip_amount:>6.2f}")
+print("-" * 20)
+print(f"TOTAL:        ${total:>6.2f}")
 
 
 # Working with Multiple Variables
@@ -333,8 +350,27 @@ print(f"Letter Grade: {letter_grade}")
 
 # Challenge: Calculate GPA for 4 courses with different credit hours.
 
+course_1 = .95
+course_2 = .5
+course_3 = .75
+course_4 = .62
 
+def calculate_numerical_grade_value(average):
+    res = 0
+    if average >= 90:
+        res = 4.0
+    elif average >= 80:
+        res = 3.0
+    elif average >= 70:
+        res = 2.0
+    elif average >= 60:
+        res = 1.0
+    else:
+        res = 0
 
+def main():
+    gpa = calculate_numerical_grade_value(course_1) * .4 + calculate_numerical_grade_value(course_2) * .1 + calculate_numerical_grade_value(course_3) * .2 + calculate_numerical_grade_value(course_4) * .3
+    print(gpa)
 
 # Constants and Mathematical Calculations
 print("\n--- CONSTANTS AND MATH ---")
@@ -360,7 +396,9 @@ print(f"Object falls {distance:.1f} meters in {time} seconds")
 
 # Challenge: Calculate the volume of a cylinder (π * r² * h).
 
-
+radius = 7
+height = 7
+cylinder_volume = 7 * PI * 7
 
 
 # Comments and Documentation
@@ -390,7 +428,9 @@ print(f"Total cost: ${total:.2f}")
 
 # Challenge: Write a well-commented program that converts temperature.
 
-
+def convert_celsius_to_fahrenheit(celsius_temp):
+    fahrenheit = (celsius_temp*2)+20 # Easy celsius conversion is to double the celsius temp and add twenty.
+    return fahrenheit
 
 
 # Type Hints for Code Readability
@@ -473,7 +513,11 @@ print(report)
 
 # Challenge: Create variables with type hints for a book record (title, author, pages, price, in_stock).
 
-
+title: str = "Harry Potter"
+author: str = "JK Rowling"
+pages: int = 300
+price: float = 2.50
+in_stock: bool = True
 
 
 print("\n" + "="*50)
