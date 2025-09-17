@@ -10,8 +10,8 @@ print(name)    # Output: Alice
 
 # Challenge: Create a variable with a value and print it.
 
-
-
+challenge_1 = 10
+print(challenge_1)
 
 # Arithmetic Operations
 a = 10
@@ -31,7 +31,8 @@ print("Remainder:", remainder)         # Output: 1
 
 # Challenge: Perform arithmetic operations on two numbers and print the results.
 
-
+challenge_2 = a - b
+print(challenge_2)
 
 # String Concatenation
 greeting = "Hello"
@@ -43,7 +44,9 @@ print(full_greeting)   # Output: Hello, Alice!
 
 # Challenge: Concatenate three strings and print the result.
 
+challenge_3 = "Good" + "morning" + "my friend."
 
+print(challenge_3)
 
 # Combining variables and expressions
 num1 = 8
@@ -55,7 +58,8 @@ print(message)  # Output: The sum of 8 and 2 is 10
 
 # Challenge: Add two numbers and print the result using string concatenation.
 
-
+challenge_4 = 2 + 4
+print(str(challenge_4))
 
 '''
 Summary of Key Concepts:
@@ -109,7 +113,12 @@ print("Is graduated (boolean):", is_graduated)
 
 # Challenge: Create one variable of each data type and print them with labels.
 
+num = 1
+num_float = 1.0
+num_str = "1.0"
+num_bool = True
 
+print("Integer:" + num + "Float:" + num_float + "String:" + num_str + "Bool:" + num_bool)
 
 
 # Variable Naming Conventions
@@ -135,7 +144,9 @@ print("Course code:", course_code)
 
 # Challenge: Create 3 variables with descriptive names for a student record.
 
-
+student_attendance_percentage = .87
+student_zipcode = 20112
+student_address = "188 Humboldt St"
 
 
 # More Arithmetic Operations
@@ -164,7 +175,10 @@ print("(2 + 3) * (4 ** 2 - 1) =", calculation_with_parens)  # = 5 * 15 = 75
 
 # Challenge: Calculate the area of a triangle: (base * height) / 2
 
+base = 2
+height = 2
 
+triangle_area = (base * height) / 2
 
 
 # Modern String Formatting with f-strings
@@ -195,7 +209,10 @@ print("Calculation:", area_message)
 
 # Challenge: Use f-strings to create a message about a book with title, author, and page count.
 
-
+title = "Harry Potter"
+author = "JK Rowling"
+page_count = 300
+book_description = f"The book is {title}, written by {author}, and has {page_count} pages."
 
 
 # Getting Input from Users
@@ -224,7 +241,13 @@ print(f"You were probably born in {birth_year}")
 
 # Challenge: Create a program that calculates someone's birth year from their age.
 
+def get_birth_year(age):
+    return 2025-age
 
+def main():
+    age = input("What is your age?")
+    birth_year = get_birth_year(int(age))
+    print(f"You were born in {birth_year}")
 
 
 # Real-World Example: Restaurant Bill Calculator
